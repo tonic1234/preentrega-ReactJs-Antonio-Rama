@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap');
+
+
+$darkGray: rgb(38, 38, 38);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $darkGray;
+    height: 80px;
+
+    nav {
+        display: flex;
+        gap: 10px;
+
+        a {
+            text-decoration: none;
+
+
+            &:link,
+            &:visited {
+                color: white;
+            }
+
+        }
+
+        .navBar_cartDiv {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .navBar_cartWidget {
+                width: 2rem;
+                margin-left: 10px;
+            }
+
+            .navBar_cartItemsBubble {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 20px;
+                height: 20px;
+                border-radius: 100px;
+                background-color: rgb(161, 5, 5);
+                top: -12px;
+                left: 30px;
+
+
+
+                p {
+                    color: white;
+                    font-family: 'Red Hat Display', sans-serif;
+                    font-weight: 400;
+                    font-size: 10pt;
+
+                }
+            }
+
+
+
+
+        }
+
+
+
+    }
+
+    .greeting {
+        color: white;
+    }
+}
